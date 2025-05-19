@@ -1,0 +1,8 @@
+.vscode
+.vscodeignore
+
+__pycache__
+
+ckpt
+data
+logs
