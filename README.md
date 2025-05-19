@@ -4,11 +4,11 @@
 
 # DHO: Simple Few-shot Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization
 
-[Seongjae Kang](#), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
-
 <div style="float: right; margin: 0 0 1em 1em;">
   <img src="figures/concept.png" width="50%">
 </div>
+
+[Seongjae Kang](#), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
 
 [[Project Page](#)] [[Paper](https://arxiv.org/abs/2505.07675v1)]
 
