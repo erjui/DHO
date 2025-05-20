@@ -5,7 +5,7 @@
 # DHO: Simple Few-shot Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization
 
 <div style="float: right; margin: 0 0 1em 1em;">
-  <img src="figures/concept.png" width="50%">
+  <img src="figures/concept.png" width="40%">
 </div>
 
 [Seongjae Kang](#), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
@@ -25,7 +25,7 @@
 ## 🛠️ Code
 
 <div align="center">
-  <img src="figures/method.png" width="85%">
+  <img src="figures/method.png" width="100%">
 </div>
 
 ### 🚀 Training DHO
