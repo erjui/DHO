@@ -29,6 +29,12 @@ STUDENT_MODELS=(
     "mobilenet"
 )
 
+# Create log directories if they don't exist
+for dataset in "${DATASETS[@]}"; do
+    mkdir -p ./logs/zeroshot_others/$dataset
+    mkdir -p ./logs/fewshot_others/$dataset
+done
+
 # Loop over all combinations
 for dataset in "${DATASETS[@]}"; do
     for shots in "${SHOTS[@]}"; do
@@ -48,7 +54,7 @@ for dataset in "${DATASETS[@]}"; do
                         --train_epoch 200 \
                         --lr 0.001 \
                         --root_path ./data \
-                        | tee ./logs/$dataset/dho_${student_model}_zs_${shots}shot.log
+                        | tee ./logs/zeroshot_others/$dataset/others_${student_model}_zs_${shots}shot.log
                 elif [ "$teacher_type" = "fs" ]; then
                     # Few-shot teacher command
                     CUDA_VISIBLE_DEVICES=1 python train_others.py \
@@ -61,7 +67,7 @@ for dataset in "${DATASETS[@]}"; do
                         --train_epoch 200 \
                         --lr 0.001 \
                         --root_path ./data \
-                        | tee ./logs/$dataset/dho_${student_model}_fs_${shots}shot.log
+                        | tee ./logs/fewshot_others/$dataset/others_${student_model}_fs_${shots}shot.log
                 fi
 
                 # Add a small delay between runs to avoid potential issues

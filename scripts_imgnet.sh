@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create logs directory if it doesn't exist
+mkdir -p ./logs/imagenet
+
 SHOTS=(
     1
     2

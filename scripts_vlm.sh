@@ -12,6 +12,9 @@ TEACHER_MODELS=(
     "apple/DFN5B-CLIP-ViT-H-14-378"
 )
 
+# Create log directory if it doesn't exist
+mkdir -p ./logs/imagenet
+
 for percent in "${PERCENTS[@]}"; do
     for student_model in "${STUDENT_MODELS[@]}"; do
         for teacher_model in "${TEACHER_MODELS[@]}"; do
