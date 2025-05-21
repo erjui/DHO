@@ -316,7 +316,7 @@ def evaluate(model, data_loader, normalize, alpha=0.5, beta=0.5):
 
             probs_ce = F.softmax(outputs_ce, dim=1)
             probs_kd = F.softmax(outputs_kd / beta, dim=1)
-            probs = (1 - alpha) * probs_ce + alpha * probs_kd
+            probs = alpha * probs_ce + (1 - alpha) * probs_kd
 
             _, predicted = torch.max(probs.data, 1)
             total += labels.size(0)
