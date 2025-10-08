@@ -150,10 +150,10 @@ CUDA_VISIBLE_DEVICES=1 python train_others.py \
 
 | Dataset | Student Model | Teacher Model | Labeled Data | Top-1 Acc. | Download |
 |:-------:|:------------:|:-------------:|:------------:|:----------:|:--------:|
-| ImageNet | ViT-B/16 | ViT-H/14 | 1% | 81.6 | [TBD](#) |
-| ImageNet | ViT-B/16 | ViT-H/14 | 10% | 82.8 | [TBD](#) |
-| ImageNet | ViT-L/14 | ViT-H/14 | 1% | 84.6 | [TBD](#) |
-| ImageNet | ViT-L/14 | ViT-H/14 | 10% | 85.9 | [TBD](#) |
+| ImageNet | ViT-B/16 | ViT-H/14 | 1% | 81.6 | [Link](https://huggingface.co/erjui/dho/resolve/main/vit_b_1.pt) |
+| ImageNet | ViT-B/16 | ViT-H/14 | 10% | 82.8 | [Link](https://huggingface.co/erjui/dho/resolve/main/vit_b_10.pt) |
+| ImageNet | ViT-L/14 | ViT-H/14 | 1% | 84.6 | [Link](https://huggingface.co/erjui/dho/resolve/main/vit_l_1.pt) |
+| ImageNet | ViT-L/14 | ViT-H/14 | 10% | 85.9 | [Link](https://huggingface.co/erjui/dho/resolve/main/vit_l_10.pt) |
 
 </div>
 
