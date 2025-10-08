@@ -10,10 +10,10 @@
 
 [Seongjae Kang](#), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
 
-[[Project Page](#)] [[Paper](https://arxiv.org/abs/2505.07675v1)]
+[[Project Page](https://huggingface.co/papers/2505.07675)] [[Paper](https://arxiv.org/abs/2505.07675)]
 
 - ✨ Introduces a **dual-head optimization** strategy for semi-supervised distillation
-- 🏆 Achieves **state-of-the-art** few-/low-shot performance on ImageNet and other datasets
+- 🏆 Achieves **state-of-the-art** on ImageNet semi-supervised learning (1% and 10% labeled data)
 - 🔄 Enables efficient transfer from VLMs (e.g., CLIP) to smaller student models
 - 🧩 Simple, scalable, and easy to integrate into existing pipelines
 
@@ -159,15 +159,13 @@ CUDA_VISIBLE_DEVICES=1 python train_others.py \
 ## 📝 Citation
 
 ```bibtex
-@article{dho,
-  author = {Kang, Seongjae and Lee, Dong Bok and Jang, Hyungjoon and Hwang, Sung Ju},
-  title = {Simple Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization},
-  journal = {arXiv preprint arXiv:2505.07675},
-  year = {2025},
-  eprint = {2505.07675},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.LG},
-  doi = {10.48550/arXiv.2505.07675}
+@article{kang2025simple,
+  title={Simple yet Effective Semi-supervised 
+  Knowledge Distillation from Vision-Language 
+  Models via Dual-Head Optimization},
+  author={Kang, Seongjae and Lee, Dong Bok and Jang, Hyungjoon and Hwang, Sung Ju},
+  journal={arXiv preprint arXiv:2505.07675},
+  year={2025}
 }
 ```
 
