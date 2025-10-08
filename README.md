@@ -8,7 +8,7 @@
   <img src="figures/concept.png" width="40%">
 </div>
 
-[Seongjae Kang](#), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
+[Seongjae Kang](https://erjui.github.io/), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
 
 [[Project Page](https://huggingface.co/papers/2505.07675)] [[Paper](https://arxiv.org/abs/2505.07675)]
 
