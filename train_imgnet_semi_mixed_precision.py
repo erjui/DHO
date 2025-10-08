@@ -179,7 +179,6 @@ def train_student(args, student_model, student_normalize, clip_model, clip_norma
 
     # Initialize training parameters
     temperature = 2.0
-    best_acc, best_epoch, best_alpha, best_beta = 0.0, 0, 0.5, 1.0
     cache_path = os.path.join('./logs', 'imagenet', f"ckpt_dho_t-{args.teacher_model}_s-{args.student_model}_p-{args.percent}.pt")
 
     for epoch in range(args.train_epoch):
@@ -302,26 +301,21 @@ def train_student(args, student_model, student_normalize, clip_model, clip_norma
             print(f'Epoch: {epoch+1}/{args.train_epoch}')
             print(f'Loss: {avg_loss:.4f}')
             print(f'Test Acc: {test_acc:.2f}%')
-            print(f'Best parameters: alpha={alpha:.2f}, beta={beta:.2f}\n')
+            print(f'Parameters: alpha={alpha:.2f}, beta={beta:.2f}\n')
 
-            # Save best model
-            if test_acc > best_acc:
-                best_acc = test_acc
-                best_epoch = epoch
-                best_alpha = alpha
-                best_beta = beta
-                torch.save({
-                    'model_state_dict': student_model.state_dict(),
-                    'epoch': epoch,
-                    'acc': test_acc,
-                    'alpha': alpha,
-                    'beta': beta
-                }, cache_path)
+            # Save last checkpoint
+            torch.save({
+                'model_state_dict': student_model.state_dict(),
+                'epoch': epoch,
+                'acc': test_acc,
+                'alpha': alpha,
+                'beta': beta
+            }, cache_path)
 
     # Final results only on rank 0
     if rank == 0:
-        print(f"\nBest test accuracy: {best_acc:.2f}% at epoch {best_epoch}")
-        print(f"Best parameters: alpha={best_alpha:.2f}, beta={best_beta:.2f}")
+        print(f"\nFinal test accuracy: {test_acc:.2f}%")
+        print(f"Final parameters: alpha={alpha:.2f}, beta={beta:.2f}")
 
 
 def evaluate(model, data_loader, normalize, alpha=0.5, beta=0.5):
@@ -360,7 +354,7 @@ def main():
     # Load arguments
     args = get_arguments()
     process_count = int(os.environ.get('WORLD_SIZE', 1))
-    args.batch_size = args.batch_size // process_count
+    args.batch_size = args.batch_size // (process_count * args.gradient_accumulation_steps)
     args.local_rank = int(os.environ.get('RANK', -1))
     print(f'Using distributed training with {process_count} processes. Batch size per process: {args.batch_size}')
 
