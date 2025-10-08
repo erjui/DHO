@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2505.07675v1-b31b1b.svg)](https://arxiv.org/abs/2505.07675v1)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.07675v1-b31b1b.svg)](https://arxiv.org/abs/2505.07675)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/simple-semi-supervised-knowledge-distillation/semi-supervised-image-classification-on-1)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-1?p=simple-semi-supervised-knowledge-distillation)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/simple-semi-supervised-knowledge-distillation/semi-supervised-image-classification-on-2)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-2?p=simple-semi-supervised-knowledge-distillation)
 
