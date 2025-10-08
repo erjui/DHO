@@ -7,5 +7,6 @@ torch
 torchvision
 git+https://github.com/openai/CLIP.git
 open_clip_torch
+scikit-learn
 
 gdown # datasets/utils.py
