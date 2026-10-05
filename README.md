@@ -10,7 +10,7 @@
 
 [Seongjae Kang](https://erjui.github.io/), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
 
-[[Project Page](https://huggingface.co/papers/2505.07675)] [[Paper](https://arxiv.org/abs/2505.07675)]
+[[Project Page](https://dual-head-optimization.github.io/)] [[Paper](https://arxiv.org/abs/2505.07675)]
 
 - ✨ Introduces a **dual-head optimization** strategy for semi-supervised distillation
 - 🏆 Achieves **state-of-the-art** on ImageNet semi-supervised learning (both 1% and 10% labeled data)
