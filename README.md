@@ -1,3 +1,4 @@
+[![NeurIPS 2026](https://img.shields.io/badge/NeurIPS-2026-blue.svg)](https://openreview.net/forum?id=bA0Jhhnk8K)
 [![arXiv](https://img.shields.io/badge/arXiv-2505.07675v1-b31b1b.svg)](https://arxiv.org/abs/2505.07675)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/simple-semi-supervised-knowledge-distillation/semi-supervised-image-classification-on-1)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-1?p=simple-semi-supervised-knowledge-distillation)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/simple-semi-supervised-knowledge-distillation/semi-supervised-image-classification-on-2)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-2?p=simple-semi-supervised-knowledge-distillation)
@@ -10,7 +11,9 @@
 
 [Seongjae Kang](https://erjui.github.io/), [Dong Bok Lee](#), [Hyungjoon Jang](#), [Sung Ju Hwang](#)
 
-[[Project Page](https://dual-head-optimization.github.io/)] [[Paper](https://arxiv.org/abs/2505.07675)]
+**Accepted at NeurIPS 2026 (Poster).**
+
+[[Project Page](https://dual-head-optimization.github.io/)] [[Paper](https://arxiv.org/abs/2505.07675)] [[OpenReview](https://openreview.net/forum?id=bA0Jhhnk8K)]
 
 - ✨ Introduces a **dual-head optimization** strategy for semi-supervised distillation
 - 🏆 Achieves **state-of-the-art** on ImageNet semi-supervised learning (both 1% and 10% labeled data)
@@ -19,6 +22,8 @@
 - 🧩 Simple, scalable, and easy to integrate into existing pipelines
 
 ## 🔥 News
+
+* **[2026.10.24]** 🎉 DHO has been accepted to **NeurIPS 2026 (Poster)**! [OpenReview](https://openreview.net/forum?id=bA0Jhhnk8K)
 
 * **[2024.05.20]** 📦 Code and checkpoints released!
 * **[2024.05.13]** 📄 DHO paper is released.
@@ -160,13 +165,12 @@ CUDA_VISIBLE_DEVICES=1 python train_others.py \
 ## 📝 Citation
 
 ```bibtex
-@article{kang2025simple,
-  title={Simple yet Effective Semi-supervised 
-  Knowledge Distillation from Vision-Language 
-  Models via Dual-Head Optimization},
+@inproceedings{kang2026simple,
+  title={Simple yet Effective Semi-supervised Knowledge Distillation from Vision-Language Models via Dual-Head Optimization},
   author={Kang, Seongjae and Lee, Dong Bok and Jang, Hyungjoon and Hwang, Sung Ju},
-  journal={arXiv preprint arXiv:2505.07675},
-  year={2025}
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  url={https://openreview.net/forum?id=bA0Jhhnk8K}
 }
 ```
 
